@@ -14,8 +14,11 @@ namespace EventsLearning
 
             //Console.WriteLine(arr2.MyAll(i => i % 3 == 0 && i < 0));
 
-            var fileWatcher = new MyFileWatcher();
-            fileWatcher.WatchForFolder();
+            //var fileWatcher = new MyFileWatcher();
+            //fileWatcher.WatchForFolder();
+
+            var stringFinder = new StringFinderWatcher();
+            stringFinder.Start();
 
             Console.ReadKey();
         }
